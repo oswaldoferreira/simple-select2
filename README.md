@@ -12,7 +12,7 @@ Using simple-form and slim:
 
 ### Slim view:
 
-```
+```ruby
   = simple_form_for @user do |t|
     = t.hidden_field :id, class: 'select2-user-name'
 
