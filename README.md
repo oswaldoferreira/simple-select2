@@ -33,7 +33,7 @@ Using simple-form and slim:
 
 ```ruby
   def get_users_by_name
-    teams = Team.where('name ILIKE(?)', "%#{params[:name]}%")
+    teams = User.where('name ILIKE(?)', "%#{params[:name]}%")
 
     users_hash = users.map { |t| { id: t.id, name: t.name } }
 
