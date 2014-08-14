@@ -20,7 +20,7 @@ Using simple-form and slim:
 
 ### Javascript:
 
-```
+```javascript
   Select2.initialize({
     elem: $(".select2-user-name"),
     attribute_name: 'name',
@@ -31,7 +31,7 @@ Using simple-form and slim:
 
 #### Make sure your controller responds to the 'attribute_name' param, your Rails controller could be something like:
 
-```
+```ruby
   def get_users_by_name
     teams = Team.where('name ILIKE(?)', "%#{params[:name]}%")
 
