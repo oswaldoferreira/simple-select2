@@ -1,11 +1,11 @@
 simple-select2
 ==============
 
-A simple select2 JS initializer
+A simple select2 ajax helper
+
+You can use it to avoid loading too much select options on your form field.
 
 # How to use it
-
-
 
 
 Using simple-form and slim:
