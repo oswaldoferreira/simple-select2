@@ -3,14 +3,7 @@ Select2 = {
         this.settings = settings;
 
         this.settings.elem.select2({
-            createSearchChoice: function(term, data) {
-                var dataFiltered = $(data).filter(function() {
-                    var _text = this.text.toUpperCase(),
-                        _term = term.toUpperCase(),
-                        isEqual = _text.localeCompare(_term) === 0;
-                    return isEqual;
-                });
-            },
+            multiple: settings.multiple,
             placeholder: this.settings.placeholder,
             minimumInputLength: 3,
             ajax: {
