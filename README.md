@@ -25,7 +25,8 @@ Using simple-form and slim:
     elem: $(".select2-user-name"),
     attribute_name: 'name',
     placeholder: "Type the user name",
-    ajax_url: "/app/get_users_by_name"
+    ajax_url: "/app/get_users_by_name",
+    multiple: false
   });
 ```
 
